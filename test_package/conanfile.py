@@ -14,4 +14,4 @@ class RangConan(ConanFile):
         self.copy("*.hpp")
 
     def test(self):
-        self.run(".%svisualTest" % os.sep)
+        self.run(f".{os.sep}visualTest")
